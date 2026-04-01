@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1E3A5F;
+  --color-primary-light: #2A4F7F;
+  --color-primary-dark: #152D4A;
+  --color-secondary: #6B7B8D;
+  --color-secondary-light: #8A9AAC;
+  --color-accent: #E8702A;
+  --color-accent-hover: #D4611F;
+  --color-accent-light: #F5A66B;
+  --color-bg: #F8F7F4;
+  --color-bg-alt: #ECEEF0;
+  --color-text: #2D2D2D;
+  --color-text-light: #5A5A5A;
+  --color-white: #FFFFFF;
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  z-index: 100;
+  font-weight: 700;
+  transition: top 0.2s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
