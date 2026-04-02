@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Polityka cookies',
-  description: 'Polityka plik\u00f3w cookies strony tynkibaryza.pl.',
+  description: 'Polityka plików cookies strony tynkibaryza.pl.',
 };
 
 export default function CookiePolicyPage() {
@@ -23,94 +23,94 @@ export default function CookiePolicyPage() {
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
-            1. Czym s\u0105 pliki cookies?
+            1. Czym są pliki cookies?
           </h2>
           <p className="text-text-light leading-relaxed mb-6">
-            Pliki cookies (ciasteczka) to niewielkie pliki tekstowe, kt\u00f3re s\u0105
-            zapisywane na Pa\u0144stwa urz\u0105dzeniu ko\u0144cowym (komputerze, tablecie,
+            Pliki cookies (ciasteczka) to niewielkie pliki tekstowe, które są
+            zapisywane na Państwa urządzeniu końcowym (komputerze, tablecie,
             smartfonie) podczas korzystania ze strony internetowej. Pliki te
-            pozwalaj\u0105 na prawid\u0142owe dzia\u0142anie strony, zapami\u0119tywanie
-            preferencji u\u017cytkownika oraz zbieranie informacji statystycznych.
+            pozwalają na prawidłowe działanie strony, zapamiętywanie
+            preferencji użytkownika oraz zbieranie informacji statystycznych.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
-            2. Rodzaje wykorzystywanych plik\u00f3w cookies
+            2. Rodzaje wykorzystywanych plików cookies
           </h2>
 
           <h3 className="font-heading font-semibold text-xl text-primary mb-3">
-            a) Niezb\u0119dne (konieczne)
+            a) Niezbędne (konieczne)
           </h3>
           <p className="text-text-light leading-relaxed mb-4">
-            S\u0105 niezb\u0119dne do prawid\u0142owego dzia\u0142ania strony internetowej.
-            Obejmuj\u0105 m.in. zapami\u0119tywanie Pa\u0144stwa wyb\u00f3r dotycz\u0105cy
-            plik\u00f3w cookies. Nie wymagaj\u0105 zgody u\u017cytkownika.
+            Są niezbędne do prawidłowego działania strony internetowej.
+            Obejmują m.in. zapamiętywanie Państwa wybór dotyczący
+            plików cookies. Nie wymagają zgody użytkownika.
           </p>
 
           <h3 className="font-heading font-semibold text-xl text-primary mb-3">
             b) Statystyczne (analityczne)
           </h3>
           <p className="text-text-light leading-relaxed mb-4">
-            Pozwalaj\u0105 na zbieranie anonimowych informacji o sposobie korzystania
-            ze strony internetowej, co pomaga nam j\u0105 ulepsza\u0107. Wykorzystujemy
-            w tym celu {'{PLACEHOLDER \u2014 np. Google Analytics 4, Plausible itp.}'}.
-            Te pliki cookies s\u0105 instalowane wy\u0142\u0105cznie po wyra\u017ceniu
-            przez Pa\u0144stwa zgody.
+            Pozwalają na zbieranie anonimowych informacji o sposobie korzystania
+            ze strony internetowej, co pomaga nam ją ulepszać. Wykorzystujemy
+            w tym celu {'{PLACEHOLDER — np. Google Analytics 4, Plausible itp.}'}.
+            Te pliki cookies są instalowane wyłącznie po wyrażeniu
+            przez Państwa zgody.
           </p>
 
           <h3 className="font-heading font-semibold text-xl text-primary mb-3">
             c) Marketingowe
           </h3>
           <p className="text-text-light leading-relaxed mb-6">
-            Mog\u0105 by\u0107 wykorzystywane do wy\u015bwietlania spersonalizowanych
-            reklam. {'{PLACEHOLDER \u2014 wymieni\u0107 narz\u0119dzia marketingowe je\u015bli dotyczy}'}.
-            Te pliki cookies s\u0105 instalowane wy\u0142\u0105cznie po wyra\u017ceniu
-            przez Pa\u0144stwa zgody.
+            Mogą być wykorzystywane do wyświetlania spersonalizowanych
+            reklam. {'{PLACEHOLDER — wymienić narzędzia marketingowe jeśli dotyczy}'}.
+            Te pliki cookies są instalowane wyłącznie po wyrażeniu
+            przez Państwa zgody.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
-            3. Zarz\u0105dzanie plikami cookies
+            3. Zarządzanie plikami cookies
           </h2>
           <p className="text-text-light leading-relaxed mb-3">
-            Mog\u0105 Pa\u0144stwo zmieni\u0107 ustawienia dotycz\u0105ce plik\u00f3w cookies
-            w dowolnym momencie, korzystaj\u0105c z linku &ldquo;Ustawienia cookies&rdquo;
-            w stopce strony lub za po\u015brednictwem ustawie\u0144 przegl\u0105darki internetowej:
+            Mogą Państwo zmienić ustawienia dotyczące plików cookies
+            w dowolnym momencie, korzystając z linku &ldquo;Ustawienia cookies&rdquo;
+            w stopce strony lub za pośrednictwem ustawień przeglądarki internetowej:
           </p>
           <ul className="list-disc pl-6 text-text-light space-y-2 mb-6">
             <li>
-              <strong>Google Chrome:</strong> Ustawienia \u2192 Prywatno\u015b\u0107
-              i bezpiecze\u0144stwo \u2192 Pliki cookie i inne dane witryn
+              <strong>Google Chrome:</strong> Ustawienia → Prywatność
+              i bezpieczeństwo → Pliki cookie i inne dane witryn
             </li>
             <li>
-              <strong>Mozilla Firefox:</strong> Ustawienia \u2192 Prywatno\u015b\u0107
-              i bezpiecze\u0144stwo \u2192 Ciasteczka i dane stron
+              <strong>Mozilla Firefox:</strong> Ustawienia → Prywatność
+              i bezpieczeństwo → Ciasteczka i dane stron
             </li>
             <li>
-              <strong>Safari:</strong> Preferencje \u2192 Prywatno\u015b\u0107
-              \u2192 Zarz\u0105dzaj danymi stron
+              <strong>Safari:</strong> Preferencje → Prywatność
+              → Zarządzaj danymi stron
             </li>
             <li>
-              <strong>Microsoft Edge:</strong> Ustawienia \u2192 Pliki cookie
+              <strong>Microsoft Edge:</strong> Ustawienia → Pliki cookie
               i uprawnienia witryn
             </li>
           </ul>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
-            4. Konsekwencje wy\u0142\u0105czenia plik\u00f3w cookies
+            4. Konsekwencje wyłączenia plików cookies
           </h2>
           <p className="text-text-light leading-relaxed mb-6">
-            Wy\u0142\u0105czenie plik\u00f3w cookies niezb\u0119dnych mo\u017ce spowodowa\u0107
-            nieprawid\u0142owe dzia\u0142anie niekt\u00f3rych funkcji strony. Wy\u0142\u0105czenie
-            plik\u00f3w cookies statystycznych i marketingowych nie wp\u0142ywa na
-            dzia\u0142anie strony, ale uniemo\u017cliwia zbieranie danych analitycznych
-            i wy\u015bwietlanie spersonalizowanych tre\u015bci.
+            Wyłączenie plików cookies niezbędnych może spowodować
+            nieprawidłowe działanie niektórych funkcji strony. Wyłączenie
+            plików cookies statystycznych i marketingowych nie wpływa na
+            działanie strony, ale uniemożliwia zbieranie danych analitycznych
+            i wyświetlanie spersonalizowanych treści.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
             5. Kontakt
           </h2>
           <p className="text-text-light leading-relaxed">
-            W razie pyta\u0144 dotycz\u0105cych polityki cookies, prosimy o kontakt
-            pod adresem e-mail: {'{EMAIL}'} lub za po\u015brednictwem{' '}
+            W razie pytań dotyczących polityki cookies, prosimy o kontakt
+            pod adresem e-mail: {'{EMAIL}'} lub za pośrednictwem{' '}
             <a href="/kontakt" className="text-accent underline hover:text-accent-hover">
               formularza kontaktowego
             </a>.

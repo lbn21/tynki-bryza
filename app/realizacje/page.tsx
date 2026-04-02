@@ -5,7 +5,7 @@ import CTABanner from '@/components/home/CTABanner';
 export const metadata: Metadata = {
   title: 'Realizacje',
   description:
-    'Galeria naszych realizacji \u2013 zobacz przyk\u0142ady profesjonalnych tynk\u00f3w maszynowych wykonanych przez firm\u0119 Baryza.',
+    'Galeria naszych realizacji – zobacz przykłady profesjonalnych tynków maszynowych wykonanych przez firmę Baryza.',
 };
 
 export default function GalleryPage() {

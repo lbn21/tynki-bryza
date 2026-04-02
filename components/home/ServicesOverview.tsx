@@ -38,8 +38,8 @@ export default function ServicesOverview() {
     <section className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Nasze Us\u0142ugi"
-          subtitle="Oferujemy szeroki zakres profesjonalnych tynk\u00f3w maszynowych"
+          title="Nasze Usługi"
+          subtitle="Oferujemy szeroki zakres profesjonalnych tynków maszynowych"
         />
 
         <motion.div

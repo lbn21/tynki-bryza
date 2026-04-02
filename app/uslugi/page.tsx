@@ -4,9 +4,9 @@ import { services } from '@/lib/services-data';
 import CTABanner from '@/components/home/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Us\u0142ugi',
+  title: 'Usługi',
   description:
-    'Profesjonalne tynki maszynowe \u2013 gipsowe, cementowo-wapienne, hybrydowe i gliniane. Sprawd\u017a nasz\u0105 pe\u0142n\u0105 ofert\u0119 us\u0142ug tynkarskich.',
+    'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. Sprawdź naszą pełną ofertę usług tynkarskich.',
 };
 
 export default function ServicesPage() {
@@ -15,10 +15,10 @@ export default function ServicesPage() {
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-white mb-4">
-            Nasze Us\u0142ugi
+            Nasze Usługi
           </h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
-            Oferujemy szeroki zakres profesjonalnych tynk\u00f3w maszynowych
+            Oferujemy szeroki zakres profesjonalnych tynków maszynowych
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function ServicesPage() {
                   {service.shortDescription}
                 </p>
                 <span className="text-accent font-semibold group-hover:translate-x-1 inline-block transition-transform">
-                  Dowiedz si\u0119 wi\u0119cej \u2192
+                  Dowiedz się więcej →
                 </span>
               </Link>
             ))}

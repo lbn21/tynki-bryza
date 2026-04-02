@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed"
         >
-          15 lat do\u015bwiadczenia w kujawsko-pomorskim i wielkopolskim.
+          15 lat doświadczenia w kujawsko-pomorskim i wielkopolskim.
           Wycena i dojazd gratis.
         </motion.p>
 
@@ -39,7 +39,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button href="/kontakt" variant="primary">
-            Bezp\u0142atna wycena
+            Bezpłatna wycena
           </Button>
           <Button href="/realizacje" variant="outlined-white">
             Nasze realizacje
@@ -60,7 +60,7 @@ export default function Hero() {
               clipRule="evenodd"
             />
           </svg>
-          Ponad 15 lat do\u015bwiadczenia
+          Ponad 15 lat doświadczenia
         </motion.div>
       </div>
     </section>

@@ -84,7 +84,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
                               onClick={onClose}
                               className="block py-2 px-6 text-text-light hover:text-accent transition-colors min-h-[48px] flex items-center"
                             >
-                              Wszystkie us\u0142ugi
+                              Wszystkie usługi
                             </Link>
                             {link.children.map((child) => (
                               <Link
@@ -115,11 +115,11 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
 
               {/* Phone + CTA */}
               <div className="mt-8 pt-6 border-t border-bg-alt">
-                {/* {TELEFON} - uzupe\u0142ni\u0107 numer telefonu */}
+                {/* {TELEFON} - uzupełnić numer telefonu */}
                 <a
                   href="tel:+48XXXXXXXXX"
                   className="flex items-center gap-3 text-accent font-bold text-lg mb-4"
-                  aria-label="Zadzwo\u0144: +48 XXX XXX XXX"
+                  aria-label="Zadzwoń: +48 XXX XXX XXX"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path

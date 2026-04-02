@@ -8,13 +8,13 @@ export default function ContactForm() {
 
   const validate = (form: FormData) => {
     const errs: Record<string, string> = {};
-    if (!form.get('name')) errs.name = 'Imi\u0119 i nazwisko jest wymagane';
+    if (!form.get('name')) errs.name = 'Imię i nazwisko jest wymagane';
     if (!form.get('phone')) errs.phone = 'Numer telefonu jest wymagany';
     const email = form.get('email') as string;
     if (!email) {
       errs.email = 'Adres email jest wymagany';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      errs.email = 'Podaj prawid\u0142owy adres email';
+      errs.email = 'Podaj prawidłowy adres email';
     }
     if (!form.get('consent')) errs.consent = 'Zgoda jest wymagana';
     return errs;
@@ -41,10 +41,10 @@ export default function ContactForm() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-heading font-semibold text-xl text-primary mb-2">
-          Dzi\u0119kujemy!
+          Dziękujemy!
         </h3>
         <p className="text-text-light">
-          Twoje zapytanie zosta\u0142o wys\u0142ane. Odpowiemy w ci\u0105gu 24 godzin.
+          Twoje zapytanie zostało wysłane. Odpowiemy w ciągu 24 godzin.
         </p>
       </div>
     );
@@ -52,10 +52,10 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
-      {/* Imi\u0119 i nazwisko */}
+      {/* Imię i nazwisko */}
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-text mb-1.5">
-          Imi\u0119 i nazwisko <span className="text-accent">*</span>
+          Imię i nazwisko <span className="text-accent">*</span>
         </label>
         <input
           type="text"
@@ -98,17 +98,17 @@ export default function ContactForm() {
         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
       </div>
 
-      {/* Rodzaj us\u0142ugi */}
+      {/* Rodzaj usługi */}
       <div>
         <label htmlFor="service" className="block text-sm font-semibold text-text mb-1.5">
-          Rodzaj us\u0142ugi
+          Rodzaj usługi
         </label>
         <select
           id="service"
           name="service"
           className="w-full px-4 py-3 rounded-lg border border-bg-alt bg-white text-text text-base focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
         >
-          <option value="">Wybierz us\u0142ug\u0119...</option>
+          <option value="">Wybierz usługę...</option>
           <option value="gipsowe">Tynki gipsowe</option>
           <option value="gipsowe-twarde">Tynki gipsowe twarde</option>
           <option value="cementowo-wapienne">Tynki cementowo-wapienne</option>
@@ -118,10 +118,10 @@ export default function ContactForm() {
         </select>
       </div>
 
-      {/* Metra\u017c */}
+      {/* Metraż */}
       <div>
         <label htmlFor="area" className="block text-sm font-semibold text-text mb-1.5">
-          Przybli\u017cony metra\u017c (m\u00b2)
+          Przybliżony metraż (m²)
         </label>
         <input
           type="number"
@@ -132,10 +132,10 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Wiadomo\u015b\u0107 */}
+      {/* Wiadomość */}
       <div>
         <label htmlFor="message" className="block text-sm font-semibold text-text mb-1.5">
-          Wiadomo\u015b\u0107
+          Wiadomość
         </label>
         <textarea
           id="message"
@@ -155,9 +155,9 @@ export default function ContactForm() {
             className="mt-1 w-5 h-5 accent-accent shrink-0"
           />
           <span className="text-sm text-text-light leading-relaxed">
-            Wyra\u017cam zgod\u0119 na przetwarzanie moich danych osobowych zgodnie z{' '}
+            Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{' '}
             <a href="/polityka-prywatnosci" className="text-accent underline hover:text-accent-hover">
-              Polityk\u0105 prywatno\u015bci
+              Polityką prywatności
             </a>{' '}
             w celu udzielenia odpowiedzi na zapytanie. <span className="text-accent">*</span>
           </span>
@@ -169,11 +169,11 @@ export default function ContactForm() {
         type="submit"
         className="w-full bg-accent text-white py-3.5 rounded-lg font-heading font-semibold text-lg hover:bg-accent-hover transition-colors min-h-[48px] cursor-pointer"
       >
-        Wy\u015blij zapytanie
+        Wyślij zapytanie
       </button>
 
       <p className="text-text-light text-sm text-center">
-        Odpowiadamy w ci\u0105gu 24 godzin
+        Odpowiadamy w ciągu 24 godzin
       </p>
     </form>
   );

@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/o-nas', label: 'O nas' },
   {
     href: '/uslugi',
-    label: 'Us\u0142ugi',
+    label: 'Usługi',
     children: [
       { href: '/uslugi/tynki-gipsowe', label: 'Tynki gipsowe' },
       { href: '/uslugi/tynki-cementowo-wapienne', label: 'Tynki cementowo-wapienne' },
@@ -42,10 +42,10 @@ export default function Header() {
     >
       <nav
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20"
-        aria-label="Nawigacja g\u0142\u00f3wna"
+        aria-label="Nawigacja główna"
       >
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-tight" aria-label="Strona g\u0142\u00f3wna">
+        <Link href="/" className="flex flex-col leading-tight" aria-label="Strona główna">
           <span className="font-heading font-bold text-xl md:text-2xl text-primary tracking-tight">
             BARYZA
           </span>
@@ -108,11 +108,11 @@ export default function Header() {
 
         {/* Phone + CTA (desktop) */}
         <div className="hidden lg:flex items-center gap-4">
-          {/* {TELEFON} - uzupe\u0142ni\u0107 numer telefonu */}
+          {/* {TELEFON} - uzupełnić numer telefonu */}
           <a
             href="tel:+48XXXXXXXXX"
             className="flex items-center gap-2 text-accent font-bold hover:text-accent-hover transition-colors"
-            aria-label="Zadzwo\u0144: +48 XXX XXX XXX"
+            aria-label="Zadzwoń: +48 XXX XXX XXX"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -133,7 +133,7 @@ export default function Header() {
         <button
           className="lg:hidden p-2 min-w-[48px] min-h-[48px] flex items-center justify-center"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Zamknij menu' : 'Otw\u00f3rz menu'}
+          aria-label={mobileOpen ? 'Zamknij menu' : 'Otwórz menu'}
           aria-expanded={mobileOpen}
         >
           <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">

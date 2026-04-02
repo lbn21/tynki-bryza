@@ -49,9 +49,9 @@ export default function CookieConsent() {
     >
       <div className="max-w-5xl mx-auto">
         <p className="text-text text-sm mb-4">
-          Korzystamy z plik\u00f3w cookie, aby zapewni\u0107 prawid\u0142owe dzia\u0142anie
-          strony oraz analizowa\u0107 ruch. Mo\u017cesz wybra\u0107, kt\u00f3re rodzaje
-          plik\u00f3w cookie chcesz zaakceptowa\u0107.
+          Korzystamy z plików cookie, aby zapewnić prawidłowe działanie
+          strony oraz analizować ruch. Możesz wybrać, które rodzaje
+          plików cookie chcesz zaakceptować.
         </p>
 
         {/* Toggles */}
@@ -64,7 +64,7 @@ export default function CookieConsent() {
               disabled
               className="w-4 h-4 accent-accent"
             />
-            <span className="text-text-light">Niezb\u0119dne</span>
+            <span className="text-text-light">Niezbędne</span>
           </label>
 
           <label className="flex items-center gap-2 text-sm cursor-pointer">
@@ -103,7 +103,7 @@ export default function CookieConsent() {
             onClick={acceptNecessary}
             className="border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary hover:text-white transition-colors min-h-[44px] cursor-pointer"
           >
-            Tylko niezb\u0119dne
+            Tylko niezbędne
           </button>
           <Link
             href="/polityka-cookies"

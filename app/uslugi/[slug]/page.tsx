@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: service.name,
-    description: `${service.name} \u2013 ${service.shortDescription} Profesjonalne tynki maszynowe Baryza.`,
+    description: `${service.name} – ${service.shortDescription} Profesjonalne tynki maszynowe Baryza.`,
   };
 }
 
@@ -77,13 +77,13 @@ export default async function ServicePage({ params }: Props) {
 
           <div className="bg-bg-alt rounded-xl p-8 text-center">
             <h3 className="font-heading font-semibold text-xl text-primary mb-3">
-              Zainteresowany? Skontaktuj si\u0119 z nami!
+              Zainteresowany? Skontaktuj się z nami!
             </h3>
             <p className="text-text-light mb-6">
-              Wycena i dojazd gratis. Odpowiadamy w ci\u0105gu 24 godzin.
+              Wycena i dojazd gratis. Odpowiadamy w ciągu 24 godzin.
             </p>
             <Button href="/kontakt" variant="primary">
-              Bezp\u0142atna wycena
+              Bezpłatna wycena
             </Button>
           </div>
         </div>

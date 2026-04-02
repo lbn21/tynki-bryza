@@ -14,7 +14,7 @@ export default function GalleryPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Nasze Realizacje"
-          subtitle="Przyk\u0142ady naszych prac \u2014 jako\u015b\u0107, kt\u00f3r\u0105 wida\u0107"
+          subtitle="Przykłady naszych prac — jakość, którą widać"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -41,7 +41,7 @@ export default function GalleryPreview() {
 
         <div className="text-center mt-10">
           <Button href="/realizacje" variant="secondary">
-            Zobacz wi\u0119cej realizacji \u2192
+            Zobacz więcej realizacji →
           </Button>
         </div>
       </div>

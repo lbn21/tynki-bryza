@@ -16,7 +16,7 @@ export default function Card({
   title,
   description,
   href,
-  linkText = 'Dowiedz si\u0119 wi\u0119cej \u2192',
+  linkText = 'Dowiedz się więcej →',
 }: CardProps) {
   return (
     <motion.div

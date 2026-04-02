@@ -5,7 +5,7 @@ import ContactInfo from '@/components/contact/ContactInfo';
 export const metadata: Metadata = {
   title: 'Kontakt',
   description:
-    'Skontaktuj si\u0119 z firm\u0105 Baryza \u2013 Tynki Maszynowe. Bezp\u0142atna wycena i dojazd. Dzia\u0142amy w kujawsko-pomorskim i wielkopolskim.',
+    'Skontaktuj się z firmą Baryza – Tynki Maszynowe. Bezpłatna wycena i dojazd. Działamy w kujawsko-pomorskim i wielkopolskim.',
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
             Kontakt
           </h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
-            Skontaktuj si\u0119 z nami \u2014 wycena i dojazd gratis
+            Skontaktuj się z nami — wycena i dojazd gratis
           </p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function ContactPage() {
             {/* Left: Form */}
             <div>
               <h2 className="font-heading font-semibold text-2xl text-primary mb-6">
-                Wy\u015blij zapytanie
+                Wyślij zapytanie
               </h2>
               <ContactForm />
             </div>

@@ -4,11 +4,11 @@ export default function ContactInfo() {
       {/* Phone */}
       <div>
         <h3 className="font-heading font-semibold text-lg text-primary mb-2">Telefon</h3>
-        {/* {TELEFON} - uzupe\u0142ni\u0107 numer telefonu */}
+        {/* {TELEFON} - uzupełnić numer telefonu */}
         <a
           href="tel:+48XXXXXXXXX"
           className="flex items-center gap-3 text-accent font-bold text-xl hover:text-accent-hover transition-colors"
-          aria-label="Zadzwo\u0144: +48 XXX XXX XXX"
+          aria-label="Zadzwoń: +48 XXX XXX XXX"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -20,7 +20,7 @@ export default function ContactInfo() {
       {/* Email */}
       <div>
         <h3 className="font-heading font-semibold text-lg text-primary mb-2">Email</h3>
-        {/* {EMAIL} - uzupe\u0142ni\u0107 adres email */}
+        {/* {EMAIL} - uzupełnić adres email */}
         <a
           href="mailto:kontakt@tynkibaryza.pl"
           className="flex items-center gap-3 text-text hover:text-accent transition-colors"
@@ -41,7 +41,7 @@ export default function ContactInfo() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           <address className="not-italic">
-            Byto\u0144 64L<br />
+            Bytoń 64L<br />
             woj. kujawsko-pomorskie
           </address>
         </div>
@@ -55,19 +55,19 @@ export default function ContactInfo() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <div>
-            {/* {PLACEHOLDER} - uzupe\u0142ni\u0107 godziny pracy */}
-            <p>Pon\u2013Pt: 7:00\u201317:00</p>
-            <p>Sob: 8:00\u201313:00</p>
+            {/* {PLACEHOLDER} - uzupełnić godziny pracy */}
+            <p>Pon–Pt: 7:00–17:00</p>
+            <p>Sob: 8:00–13:00</p>
           </div>
         </div>
       </div>
 
       {/* Service area */}
       <div className="bg-bg-alt rounded-xl p-6">
-        <h3 className="font-heading font-semibold text-lg text-primary mb-2">Teren dzia\u0142ania</h3>
+        <h3 className="font-heading font-semibold text-lg text-primary mb-2">Teren działania</h3>
         <p className="text-text-light leading-relaxed">
-          Obs\u0142ugujemy teren wojew\u00f3dztwa kujawsko-pomorskiego oraz cz\u0119\u015bci
-          wojew\u00f3dztwa wielkopolskiego.
+          Obsługujemy teren województwa kujawsko-pomorskiego oraz części
+          województwa wielkopolskiego.
         </p>
       </div>
     </div>

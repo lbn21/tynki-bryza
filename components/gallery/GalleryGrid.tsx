@@ -21,7 +21,7 @@ export default function GalleryGrid() {
             transition={{ duration: 0.3, delay: Math.min(i * 0.03, 0.3) }}
             onClick={() => setLightboxIndex(i)}
             className="relative aspect-[4/3] rounded-lg overflow-hidden bg-bg-alt cursor-pointer group"
-            aria-label={`Otw\u00f3rz zdj\u0119cie: ${image.alt}`}
+            aria-label={`Otwórz zdjęcie: ${image.alt}`}
           >
             <Image
               src={image.src}

@@ -22,11 +22,11 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Tynki Maszynowe Baryza \u2013 Profesjonalne Tynkowanie | Kujawsko-Pomorskie',
+    default: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie | Kujawsko-Pomorskie',
     template: '%s | Tynki Maszynowe Baryza',
   },
   description:
-    'Profesjonalne tynki maszynowe \u2013 gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat do\u015bwiadczenia. Wycena i dojazd gratis. Kujawsko-pomorskie i wielkopolskie.',
+    'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia. Wycena i dojazd gratis. Kujawsko-pomorskie i wielkopolskie.',
   keywords: [
     'tynki maszynowe',
     'tynki gipsowe',
@@ -57,18 +57,18 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'Firma Rados\u0142aw Baryza \u2013 Tynki Maszynowe',
+              name: 'Firma Radosław Baryza – Tynki Maszynowe',
               description:
-                'Profesjonalne tynki maszynowe \u2013 gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat do\u015bwiadczenia.',
+                'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia.',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Byto\u0144 64L',
+                streetAddress: 'Bytoń 64L',
                 addressRegion: 'kujawsko-pomorskie',
                 addressCountry: 'PL',
               },
               areaServed: ['kujawsko-pomorskie', 'wielkopolskie'],
               priceRange: '$$',
-              // {PLACEHOLDER} - uzupe\u0142ni\u0107 godziny otwarcia
+              // {PLACEHOLDER} - uzupełnić godziny otwarcia
               openingHoursSpecification: {
                 '@type': 'OpeningHoursSpecification',
                 dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -81,7 +81,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <a href="#main-content" className="skip-to-content">
-          Przejd\u017a do tre\u015bci
+          Przejdź do treści
         </a>
         <Header />
         <main id="main-content" className="flex-1">
