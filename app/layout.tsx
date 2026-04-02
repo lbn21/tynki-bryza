@@ -21,6 +21,7 @@ const montserrat = Montserrat({
   weight: ['500', '600', '700', '800'],
 });
 
+// TODO: Usunąć robots noindex/nofollow przed uruchomieniem produkcyjnym strony
 export const metadata: Metadata = {
   title: {
     default: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie | Kujawsko-Pomorskie',
@@ -37,6 +38,10 @@ export const metadata: Metadata = {
     'wielkopolskie',
     'Baryza',
   ],
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     type: 'website',
     locale: 'pl_PL',
