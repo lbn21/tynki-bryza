@@ -27,6 +27,12 @@ Professional plastering company website (Polish language). Built with Next.js 16
 - **Package manager:** npm
 - **No UI component libraries** -- all components built from scratch with Tailwind
 
+## Deployment
+
+- **Hosting:** Vercel (connected to GitHub repo)
+- **Deploy method:** Push/merge to `main` branch triggers automatic production deployment -- do NOT use `vercel --prod` CLI
+- **Analytics:** Vercel Web Analytics enabled via `@vercel/analytics`
+
 ## Commands
 
 - `npm run dev` -- start dev server (localhost:3000)

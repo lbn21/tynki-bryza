@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import MobileCallButton from '@/components/layout/MobileCallButton';
 import CookieConsent from '@/components/CookieConsent';
+import { Analytics } from '@vercel/analytics/react';
 
 const lato = Lato({
   subsets: ['latin', 'latin-ext'],
@@ -90,6 +91,7 @@ export default function RootLayout({
         <Footer />
         <MobileCallButton />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );
