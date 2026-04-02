@@ -1,14 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 
 export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-primary-dark">
-        {/* Placeholder for hero background image - replace with actual photo */}
+      {/* Background hero image with gradient overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="/gallery/tynki-salon-panoramiczne-okna.jpg"
+          alt="Profesjonalne tynki maszynowe — salon z panoramicznymi oknami"
+          fill
+          priority
+          loading="eager"
+          quality={75}
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/80 to-primary/60" />
       </div>
 
