@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import MobileCallButton from '@/components/layout/MobileCallButton';
 import CookieConsent from '@/components/CookieConsent';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const lato = Lato({
   subsets: ['latin', 'latin-ext'],
@@ -97,6 +98,7 @@ export default function RootLayout({
         <MobileCallButton />
         <CookieConsent />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
