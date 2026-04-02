@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { galleryImages } from '@/lib/gallery-data';
-import GalleryLightbox from './GalleryLightbox';
+
+const GalleryLightbox = lazy(() => import('./GalleryLightbox'));
 
 export default function GalleryGrid() {
   const [lightboxIndex, setLightboxIndex] = useState(-1);
@@ -36,11 +37,15 @@ export default function GalleryGrid() {
         ))}
       </div>
 
-      <GalleryLightbox
-        images={galleryImages}
-        index={lightboxIndex}
-        onClose={() => setLightboxIndex(-1)}
-      />
+      {lightboxIndex >= 0 && (
+        <Suspense fallback={null}>
+          <GalleryLightbox
+            images={galleryImages}
+            index={lightboxIndex}
+            onClose={() => setLightboxIndex(-1)}
+          />
+        </Suspense>
+      )}
     </>
   );
 }
