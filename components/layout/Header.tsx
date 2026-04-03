@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Button from '@/components/ui/Button';
 import MobileMenu from './MobileMenu';
@@ -130,23 +131,43 @@ export default function Header() {
           </Button>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="lg:hidden p-2 min-w-[48px] min-h-[48px] flex items-center justify-center"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Zamknij menu' : 'Otwórz menu'}
-          aria-expanded={mobileOpen}
-        >
-          <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {mobileOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+        {/* Spacer for hamburger button (actual button is fixed-positioned outside header) */}
+        <div className="lg:hidden w-[48px] h-[48px]" />
       </nav>
     </header>
+
+    {/* Fixed hamburger/close toggle — above overlay so it stays visible during menu open/close */}
+    <button
+      className="fixed top-2 right-2 sm:right-4 z-[70] lg:hidden p-2 min-w-[48px] min-h-[48px] flex items-center justify-center md:top-4"
+      onClick={() => setMobileOpen(!mobileOpen)}
+      aria-label={mobileOpen ? 'Zamknij menu' : 'Otwórz menu'}
+      aria-expanded={mobileOpen}
+    >
+      <div className="relative w-6 h-6">
+        <motion.span
+          initial={false}
+          className="absolute left-0 w-6 h-0.5 bg-primary block"
+          animate={mobileOpen
+            ? { top: '50%', rotate: 45, translateY: '-50%' }
+            : { top: '15%', rotate: 0, translateY: '0%' }}
+          transition={{ duration: 0.3 }}
+        />
+        <motion.span
+          initial={false}
+          className="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-0.5 bg-primary block"
+          animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
+          transition={{ duration: 0.15 }}
+        />
+        <motion.span
+          initial={false}
+          className="absolute left-0 w-6 h-0.5 bg-primary block"
+          animate={mobileOpen
+            ? { bottom: '50%', rotate: -45, translateY: '50%' }
+            : { bottom: '15%', rotate: 0, translateY: '0%' }}
+          transition={{ duration: 0.3 }}
+        />
+      </div>
+    </button>
 
     <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} links={navLinks} />
     </>

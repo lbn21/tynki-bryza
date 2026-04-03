@@ -41,18 +41,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
             className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-[60] lg:hidden shadow-xl overflow-y-auto"
           >
             <div className="p-6">
-              {/* Close button */}
-              <button
-                onClick={onClose}
-                className="absolute top-4 right-4 p-2 min-w-[48px] min-h-[48px] flex items-center justify-center"
-                aria-label="Zamknij menu"
-              >
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-
-              <nav className="mt-12 flex flex-col gap-1" aria-label="Menu mobilne">
+              <nav className="mt-6 flex flex-col gap-1" aria-label="Menu mobilne">
                 {links.map((link) =>
                   link.children ? (
                     <div key={link.href}>
