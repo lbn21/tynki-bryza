@@ -376,17 +376,17 @@ export default function BrandingPage() {
             desc="Dwa kroje pisma tworzą hierarchię wizualną marki. Oba są dostępne bezpłatnie przez Google Fonts."
           />
 
-          <div className="p-8 bg-white rounded-xl border border-bg-alt mb-8">
+          <div className="p-6 sm:p-8 bg-white rounded-xl border border-bg-alt mb-8 overflow-hidden">
             <div className="font-heading text-[11px] font-bold tracking-[0.15em] uppercase text-accent mb-4">
               Krój nagłówkowy
             </div>
-            <div className="font-heading text-5xl font-extrabold text-primary leading-none">
+            <div className="font-heading text-4xl sm:text-5xl font-extrabold text-primary leading-none">
               Montserrat
             </div>
-            <div className="font-heading text-xl font-normal text-text-light mt-2">
+            <div className="font-heading text-base sm:text-xl font-normal text-text-light mt-2 break-all">
               AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
             </div>
-            <div className="font-heading text-xl font-normal text-text-light">
+            <div className="font-heading text-base sm:text-xl font-normal text-text-light">
               ĄąĆćĘęŁłŃńÓóŚśŹźŻż 0123456789
             </div>
             <div className="mt-4 text-[13px] text-text-light">
@@ -399,17 +399,17 @@ export default function BrandingPage() {
             </div>
           </div>
 
-          <div className="p-8 bg-white rounded-xl border border-bg-alt mb-8">
+          <div className="p-6 sm:p-8 bg-white rounded-xl border border-bg-alt mb-8 overflow-hidden">
             <div className="font-heading text-[11px] font-bold tracking-[0.15em] uppercase text-accent mb-4">
               Krój tekstowy
             </div>
-            <div className="text-5xl font-normal text-primary leading-none">
+            <div className="text-4xl sm:text-5xl font-normal text-primary leading-none">
               Lato
             </div>
-            <div className="text-xl text-text-light mt-2">
+            <div className="text-base sm:text-xl text-text-light mt-2 break-all">
               AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
             </div>
-            <div className="text-xl text-text-light">
+            <div className="text-base sm:text-xl text-text-light">
               ĄąĆćĘęŁłŃńÓóŚśŹźŻż 0123456789
             </div>
             <div className="mt-4 text-[13px] text-text-light">
