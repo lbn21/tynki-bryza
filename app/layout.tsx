@@ -56,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className={`${lato.variable} ${montserrat.variable}`}>
+    <html lang="pl" data-scroll-behavior="smooth" className={`${lato.variable} ${montserrat.variable}`}>
       <head>
         <script
           type="application/ld+json"
