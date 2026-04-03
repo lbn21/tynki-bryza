@@ -103,10 +103,11 @@ export default function ContactForm() {
         <label htmlFor="service" className="block text-sm font-semibold text-text mb-1.5">
           Rodzaj usługi
         </label>
+        <div className="relative">
         <select
           id="service"
           name="service"
-          className="w-full px-4 py-3 rounded-lg border border-bg-alt bg-white text-text text-base focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
+          className="w-full appearance-none px-4 py-3 pr-10 rounded-lg border border-bg-alt bg-white text-text text-base focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
         >
           <option value="">Wybierz usługę...</option>
           <option value="gipsowe">Tynki gipsowe</option>
@@ -116,6 +117,10 @@ export default function ContactForm() {
           <option value="gliniane">Tynki gliniane</option>
           <option value="inne">Inne</option>
         </select>
+        <svg className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+        </div>
       </div>
 
       {/* Metraż */}
