@@ -28,7 +28,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+            className="fixed inset-0 bg-black/40 z-[55] lg:hidden"
             onClick={onClose}
           />
 
@@ -38,7 +38,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 lg:hidden shadow-xl overflow-y-auto"
+            className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-[60] lg:hidden shadow-xl overflow-y-auto"
           >
             <div className="p-6">
               {/* Close button */}
