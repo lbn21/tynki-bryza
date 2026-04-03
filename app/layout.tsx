@@ -1,10 +1,6 @@
 import type { Metadata } from 'next';
 import { Lato, Montserrat } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import MobileCallButton from '@/components/layout/MobileCallButton';
-import CookieConsent from '@/components/CookieConsent';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -87,16 +83,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
-        <a href="#main-content" className="skip-to-content">
-          Przejdź do treści
-        </a>
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
-        <MobileCallButton />
-        <CookieConsent />
+        {children}
         <Analytics />
         <SpeedInsights />
       </body>
