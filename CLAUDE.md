@@ -131,3 +131,6 @@ Note: legal pages (polityka-prywatnosci, polityka-cookies) and branding page hav
 - JSON-LD LocalBusiness schema on homepage
 - Each page has unique title and description meta tags in Polish
 - Open Graph metadata with locale pl_PL
+- `app/robots.ts` -- dynamic robots.txt (allows all crawlers, blocks /branding)
+- `app/sitemap.ts` -- dynamic sitemap.xml with all public pages + service subpages
+- Crawlers are ALLOWED -- site is production-ready for indexing
