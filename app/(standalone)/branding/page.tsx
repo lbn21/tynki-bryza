@@ -556,13 +556,13 @@ export default function BrandingPage() {
           <SectionHeader
             number="05"
             title="Przykład zastosowania — Wizytówka"
-            desc="Propozycja wizytówki zachowująca standardy brandingu. Format 90 × 50 mm."
+            desc="Propozycja wizytówki zachowująca standardy brandingu. Format 84 × 55 mm (linia cięcia), strefa bezpieczna 80 × 51 mm, spad 88 × 59 mm."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[700px]">
             {/* Przód */}
             <div className="relative rounded-lg shadow-xl bg-primary text-white overflow-hidden">
-              <div className="aspect-[9/5]" />
+              <div className="aspect-[84/55]" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                 <div className="font-heading font-bold text-[28px] tracking-tight">
                   BARYZA
@@ -575,7 +575,7 @@ export default function BrandingPage() {
             </div>
             {/* Tył */}
             <div className="relative rounded-lg shadow-xl bg-white overflow-hidden">
-              <div className="aspect-[9/5]" />
+              <div className="aspect-[84/55]" />
               <div className="absolute inset-0 flex flex-col justify-center px-6 py-5">
                 <div className="font-heading font-bold text-sm text-primary">
                   Radosław Baryza
