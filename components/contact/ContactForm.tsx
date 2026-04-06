@@ -73,6 +73,9 @@ export default function ContactForm() {
 
       if (res.ok && result.success) {
         setSubmitted(true);
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 50);
         return;
       }
 
