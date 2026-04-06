@@ -52,23 +52,17 @@ export default function ServicesOverview() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6"
         >
           {allServicesWithTwarde.map((service, i) => (
-            <motion.div
+            <Card
               key={service.slug + service.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-            >
-              <Card
-                icon={iconMap[service.icon]}
-                title={service.name}
-                description={service.shortDescription}
-                href={service.icon === 'twarde' ? '/uslugi/tynki-gipsowe' : `/uslugi/${service.slug}`}
-              />
-            </motion.div>
+              icon={iconMap[service.icon]}
+              title={service.name}
+              description={service.shortDescription}
+              href={service.icon === 'twarde' ? '/uslugi/tynki-gipsowe' : `/uslugi/${service.slug}`}
+              index={i}
+            />
           ))}
         </motion.div>
       </div>
