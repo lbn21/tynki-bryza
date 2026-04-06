@@ -71,9 +71,9 @@ Professional plastering company website (Polish language). Built with Next.js 16
 
 ## Project Structure
 
-- `app/` -- Next.js App Router pages (all static/SSG)
+- `app/` -- Next.js App Router pages (static/SSG) + API routes (`app/api/contact/`)
 - `components/` -- React components organized by section (home/, layout/, contact/, gallery/, ui/)
-- `lib/` -- data files (services-data.ts, gallery-data.ts)
+- `lib/` -- data files (services-data.ts, gallery-data.ts, site-config.ts, contact.ts)
 - `public/gallery/` -- 32 project photos with descriptive filenames
 
 ## Key Conventions
@@ -98,7 +98,17 @@ All business contact info lives in `lib/site-config.ts` and is imported wherever
 
 To change contact data, edit `lib/site-config.ts` — all components pull from there.
 Note: legal pages (polityka-prywatnosci, polityka-cookies) and branding page have values inlined as static text.
-- Contact form has NO backend yet -- shows success message on submit with `preventDefault()`
+
+## Contact Form Backend
+
+- **API route:** `app/api/contact/route.ts`
+- **Email service:** Resend (`onboarding@resend.dev` sender for testing, custom domain for production)
+- **Rate limiting:** Upstash Redis via `@upstash/ratelimit` -- 1 request per 15 min per IP (sliding window)
+- **Bot protection:** 3 layers -- honeypot hidden field, time-based check (< 3s = reject), rate limiting
+- **Shared validation:** `lib/contact.ts` -- types + validation used by both client and server
+- **Env vars required:** `RESEND_API_KEY`, `KV_REST_API_URL`, `KV_REST_API_TOKEN`, `CONTACT_EMAIL_TO`
+- **Testing target:** `lobin21@gmail.com` (set via `CONTACT_EMAIL_TO`)
+- **Production target:** `perfect.plast.baryza@tlen.pl` (change env var + verify domain in Resend)
 
 ## Design Rules
 
