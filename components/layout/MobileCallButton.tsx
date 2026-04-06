@@ -1,12 +1,13 @@
 'use client';
 
+import { siteConfig } from '@/lib/site-config';
+
 export default function MobileCallButton() {
   return (
-    // {TELEFON} - uzupełnić numer telefonu
     <a
-      href="tel:+48XXXXXXXXX"
+      href={`tel:${siteConfig.phone.raw}`}
       className="fixed bottom-0 left-0 right-0 bg-accent text-white py-3 text-center font-heading font-semibold text-lg shadow-[0_-2px_10px_rgba(0,0,0,0.1)] z-40 lg:hidden flex items-center justify-center gap-2 min-h-[56px]"
-      aria-label="Zadzwoń teraz: +48 XXX XXX XXX"
+      aria-label={`Zadzwoń teraz: ${siteConfig.phone.display}`}
     >
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path

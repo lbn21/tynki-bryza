@@ -583,16 +583,16 @@ export default function BrandingPage() {
                 <div className="text-[11px] text-secondary mb-3">Właściciel</div>
                 <div className="w-8 h-0.5 bg-accent mb-3" />
                 <div className="text-[10px] text-text-light leading-5">
-                  <span className="text-accent font-bold">T</span> +48 XXX XXX
-                  XXX
+                  <span className="text-accent font-bold">T</span> +48 531 138
+                  825
                   <br />
                   <span className="text-accent font-bold">E</span>{' '}
-                  kontakt@tynkibaryza.pl
+                  perfect.plast.baryza@tlen.pl
                   <br />
                   <span className="text-accent font-bold">W</span> tynkibaryza.pl
                 </div>
                 <div className="text-[10px] text-text-light leading-5 mt-2">
-                  Bytoń 64L
+                  Bytoń 64L, 88-231
                   <br />
                   woj. kujawsko-pomorskie
                 </div>
@@ -615,10 +615,10 @@ export default function BrandingPage() {
                 {[
                   ['Nazwa firmy', 'Firma Radosław Baryza — Tynki Maszynowe'],
                   ['Właściciel', 'Radosław Baryza'],
-                  ['Adres', 'Bytoń 64L, woj. kujawsko-pomorskie'],
-                  ['NIP', '{NIP} — do uzupełnienia'],
-                  ['Telefon', '+48 XXX XXX XXX — do uzupełnienia'],
-                  ['Email', '{EMAIL} — do uzupełnienia'],
+                  ['Adres', 'Bytoń 64L, 88-231 Bytoń, pow. radziejowski, woj. kujawsko-pomorskie'],
+                  ['NIP', '8911609342'],
+                  ['Telefon', '+48 531 138 825'],
+                  ['Email', 'perfect.plast.baryza@tlen.pl'],
                   ['Strona www', 'tynkibaryza.pl'],
                   [
                     'Obszar działania',

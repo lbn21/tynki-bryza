@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button';
+import { siteConfig } from '@/lib/site-config';
 
 export default function CTABanner() {
   return (
@@ -11,15 +12,14 @@ export default function CTABanner() {
           Skontaktuj się z nami — wycena i dojazd gratis!
         </p>
 
-        {/* {TELEFON} - uzupełnić numer telefonu */}
         <p className="text-accent-light font-heading font-bold text-2xl md:text-3xl mb-8">
-          <a href="tel:+48XXXXXXXXX" className="hover:text-accent transition-colors">
-            +48 XXX XXX XXX
+          <a href={`tel:${siteConfig.phone.raw}`} className="hover:text-accent transition-colors">
+            {siteConfig.phone.display}
           </a>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="tel:+48XXXXXXXXX" variant="primary">
+          <Button href={`tel:${siteConfig.phone.raw}`} variant="primary">
             Zadzwoń teraz
           </Button>
           <Button href="/kontakt" variant="outlined-white">

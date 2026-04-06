@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Button from '@/components/ui/Button';
 import MobileMenu from './MobileMenu';
+import { siteConfig } from '@/lib/site-config';
 
 const navLinks = [
   { href: '/o-nas', label: 'O nas' },
@@ -111,11 +112,10 @@ export default function Header() {
 
         {/* Phone + CTA (desktop) */}
         <div className="hidden lg:flex items-center gap-4">
-          {/* {TELEFON} - uzupełnić numer telefonu */}
           <a
-            href="tel:+48XXXXXXXXX"
+            href={`tel:${siteConfig.phone.raw}`}
             className="flex items-center gap-2 text-accent font-bold hover:text-accent-hover transition-colors"
-            aria-label="Zadzwoń: +48 XXX XXX XXX"
+            aria-label={`Zadzwoń: ${siteConfig.phone.display}`}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -125,7 +125,7 @@ export default function Header() {
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            +48 XXX XXX XXX
+            {siteConfig.phone.display}
           </a>
           <Button href="/kontakt" variant="primary">
             Darmowa wycena

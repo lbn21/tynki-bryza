@@ -110,7 +110,7 @@ export default function CookiePolicyPage() {
           </h2>
           <p className="text-text-light leading-relaxed">
             W razie pytań dotyczących polityki cookies, prosimy o kontakt
-            pod adresem e-mail: {'{EMAIL}'} lub za pośrednictwem{' '}
+            pod adresem e-mail: perfect.plast.baryza@tlen.pl lub za pośrednictwem{' '}
             <a href="/kontakt" className="text-accent underline hover:text-accent-hover">
               formularza kontaktowego
             </a>.

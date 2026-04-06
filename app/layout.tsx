@@ -3,6 +3,7 @@ import { Lato, Montserrat } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { siteConfig } from '@/lib/site-config';
 
 const lato = Lato({
   subsets: ['latin', 'latin-ext'],
@@ -67,10 +68,14 @@ export default function RootLayout({
                 'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia.',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Bytoń 64L',
+                streetAddress: siteConfig.address.street,
+                addressLocality: 'Bytoń',
+                postalCode: siteConfig.address.postalCode,
                 addressRegion: 'kujawsko-pomorskie',
                 addressCountry: 'PL',
               },
+              telephone: siteConfig.phone.raw,
+              email: siteConfig.email,
               areaServed: ['kujawsko-pomorskie', 'wielkopolskie'],
               priceRange: '$$',
               // {PLACEHOLDER} - uzupełnić godziny otwarcia

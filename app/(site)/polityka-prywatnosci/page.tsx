@@ -28,8 +28,8 @@ export default function PrivacyPolicyPage() {
           <p className="text-text-light leading-relaxed mb-6">
             Administratorem danych osobowych jest Radosław Baryza prowadzący
             działalność gospodarczą pod firmą Firma Radosław Baryza,
-            z siedzibą w Bytoniu 64L, woj. kujawsko-pomorskie,
-            NIP: {'{NIP}'}, adres e-mail: {'{EMAIL}'}.
+            z siedzibą w Bytoniu 64L, 88-231 Bytoń, woj. kujawsko-pomorskie,
+            NIP: 8911609342, adres e-mail: perfect.plast.baryza@tlen.pl.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">

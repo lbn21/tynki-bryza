@@ -89,11 +89,15 @@ Professional plastering company website (Polish language). Built with Next.js 16
 - Animations must be subtle and professional (fade-in-up on scroll, hover effects) -- not flashy
 - Target 90+ Lighthouse scores for all categories
 
-## Placeholders (owner must provide)
+## Contact Data (centralized in `lib/site-config.ts`)
 
-- `{TELEFON}` -- phone number (displayed as `+48 XXX XXX XXX`)
-- `{EMAIL}` -- business email
-- `{NIP}` -- NIP number for footer/legal
+All business contact info lives in `lib/site-config.ts` and is imported wherever needed:
+- **Phone:** +48 531 138 825
+- **Email:** perfect.plast.baryza@tlen.pl
+- **NIP:** 8911609342
+
+To change contact data, edit `lib/site-config.ts` — all components pull from there.
+Note: legal pages (polityka-prywatnosci, polityka-cookies) and branding page have values inlined as static text.
 - Contact form has NO backend yet -- shows success message on submit with `preventDefault()`
 
 ## Design Rules
