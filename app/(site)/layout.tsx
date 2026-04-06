@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import MobileCallButton from '@/components/layout/MobileCallButton';
 import CookieConsent from '@/components/CookieConsent';
 
 export default function SiteLayout({
@@ -17,6 +18,7 @@ export default function SiteLayout({
         {children}
       </main>
       <Footer />
+      <MobileCallButton />
       <CookieConsent />
     </>
   );
