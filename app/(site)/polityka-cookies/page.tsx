@@ -50,21 +50,21 @@ export default function CookiePolicyPage() {
             b) Statystyczne (analityczne)
           </h3>
           <p className="text-text-light leading-relaxed mb-4">
-            Pozwalają na zbieranie anonimowych informacji o sposobie korzystania
-            ze strony internetowej, co pomaga nam ją ulepszać. Wykorzystujemy
-            w tym celu {'{PLACEHOLDER — np. Google Analytics 4, Plausible itp.}'}.
-            Te pliki cookies są instalowane wyłącznie po wyrażeniu
-            przez Państwa zgody.
+            Do analizy ruchu na stronie korzystamy z Vercel Analytics —
+            narzędzia, które nie wykorzystuje plików cookies ani nie
+            przetwarza danych osobowych użytkowników. W przyszłości
+            możemy wdrożyć dodatkowe narzędzia analityczne — w takim
+            przypadku odpowiednie pliki cookies będą instalowane wyłącznie
+            po wyrażeniu przez Państwa zgody.
           </p>
 
           <h3 className="font-heading font-semibold text-xl text-primary mb-3">
             c) Marketingowe
           </h3>
           <p className="text-text-light leading-relaxed mb-6">
-            Mogą być wykorzystywane do wyświetlania spersonalizowanych
-            reklam. {'{PLACEHOLDER — wymienić narzędzia marketingowe jeśli dotyczy}'}.
-            Te pliki cookies są instalowane wyłącznie po wyrażeniu
-            przez Państwa zgody.
+            Obecnie strona nie wykorzystuje marketingowych plików cookies.
+            W przypadku ich wdrożenia w przyszłości będą one instalowane
+            wyłącznie po wyrażeniu przez Państwa zgody.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">

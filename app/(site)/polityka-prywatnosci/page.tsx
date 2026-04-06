@@ -50,9 +50,11 @@ export default function PrivacyPolicyPage() {
               usług — na podstawie art. 6 ust. 1 lit. f RODO.
             </li>
             <li>
-              Analiza statystyczna ruchu na stronie internetowej — na podstawie
-              art. 6 ust. 1 lit. a RODO (zgoda wyrażona za pośrednictwem
-              baneru cookie).
+              Analiza statystyczna ruchu na stronie internetowej w celu jej
+              ulepszania — na podstawie art. 6 ust. 1 lit. f RODO (prawnie
+              uzasadniony interes administratora). Korzystamy z narzędzia
+              Vercel Analytics, które nie wykorzystuje plików cookies
+              ani nie przetwarza danych osobowych użytkowników.
             </li>
           </ul>
 
@@ -71,7 +73,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-text-light leading-relaxed mb-6">
             Dane osobowe pozyskane za pośrednictwem formularza kontaktowego
             będą przechowywane przez okres niezbędny do udzielenia odpowiedzi
-            na zapytanie, a następnie przez okres {'{PLACEHOLDER — np. 12 miesięcy}'}
+            na zapytanie, a następnie przez okres 12 miesięcy
             od ostatniego kontaktu, chyba że przepisy prawa wymagają dłuższego
             przechowywania.
           </p>
@@ -102,8 +104,8 @@ export default function PrivacyPolicyPage() {
           <p className="text-text-light leading-relaxed mb-6">
             Państwa dane osobowe mogą być udostępniane podmiotom
             świadczącym usługi na rzecz administratora, w szczególności
-            dostawcom usług hostingowych i narzędzi analitycznych.
-            {' {PLACEHOLDER — wymienić konkretnych podwykonawców jeśli dotyczy}'}
+            firmie Vercel Inc. (San Francisco, USA) — dostawcy usług
+            hostingowych i analitycznych.
           </p>
 
           <h2 className="font-heading font-semibold text-2xl text-primary mb-4">
