@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     'tynkowanie',
     'kujawsko-pomorskie',
     'wielkopolskie',
+    'szpachlowanie',
+    'malowanie',
     'Baryza',
   ],
   robots: {

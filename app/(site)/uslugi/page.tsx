@@ -6,7 +6,7 @@ import CTABanner from '@/components/home/CTABanner';
 export const metadata: Metadata = {
   title: 'Usługi',
   description:
-    'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. Sprawdź naszą pełną ofertę usług tynkarskich.',
+    'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. Szpachlowanie z malowaniem. Sprawdź naszą pełną ofertę usług tynkarskich.',
 };
 
 export default function ServicesPage() {

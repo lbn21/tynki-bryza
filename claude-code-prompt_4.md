@@ -10,7 +10,7 @@ Build a professional, multi-page website for a Polish machine plastering busines
 - **Address:** Bytoń 64L, województwo kujawsko-pomorskie, Poland
 - **Service area:** Województwo kujawsko-pomorskie and parts of województwo wielkopolskie
 - **Experience:** 15 lat doświadczenia, 9 lat na rynku
-- **Services offered:** Tynki gipsowe, tynki gipsowe twarde, tynki cementowo-wapienne, tynki hybrydowe, tynki gliniane
+- **Services offered:** Tynki gipsowe, tynki gipsowe twarde, tynki cementowo-wapienne, tynki hybrydowe, tynki gliniane, szpachlowanie z malowaniem
 - **Tagline/USP:** "Nie najtańsi, ale jedni z najlepszych"
 - **Perks:** Wycena i dojazd gratis. Dostęp do oględzin wcześniejszych realizacji po wcześniejszym umówieniu.
 - **Target domain:** tynkibaryza.pl (for now, develop locally)
@@ -112,6 +112,7 @@ const montserrat = Montserrat({
 /uslugi/tynki-cementowo-wapienne → Tynki cementowo-wapienne
 /uslugi/tynki-hybrydowe → Tynki hybrydowe
 /uslugi/tynki-gliniane  → Tynki gliniane
+/uslugi/szpachlowanie-z-malowaniem → Szpachlowanie z malowaniem
 /realizacje             → Realizacje / Galeria (Gallery)
 /kontakt                → Kontakt (Contact)
 /polityka-prywatnosci   → Polityka prywatności (Privacy Policy)
@@ -162,7 +163,7 @@ const montserrat = Montserrat({
 - Section heading: "Nasze Usługi"
 - 4-5 cards in a responsive grid (1 col mobile, 2 tablet, 4 desktop)
 - Each card: icon (use Lucide React icons or simple SVG), service name, 1-2 sentence description, "Dowiedz się więcej →" link
-- Services: Tynki gipsowe, Tynki gipsowe twarde, Tynki cementowo-wapienne, Tynki hybrydowe, Tynki gliniane
+- Services: Tynki gipsowe, Tynki gipsowe twarde, Tynki cementowo-wapienne, Tynki hybrydowe, Tynki gliniane, Szpachlowanie z malowaniem
 - Subtle hover animation on cards (slight lift/shadow)
 
 #### Why Choose Us (Dlaczego my?)
@@ -246,6 +247,7 @@ Fields (single-column form layout, labels ABOVE fields — never as placeholders
    - Tynki cementowo-wapienne
    - Tynki hybrydowe
    - Tynki gliniane
+   - Szpachlowanie z malowaniem
    - Inne
 5. **Przybliżony metraż (m²)** (optional) — number input
 6. **Wiadomość** (optional) — textarea

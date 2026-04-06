@@ -16,6 +16,7 @@ const navLinks = [
       { href: '/uslugi/tynki-cementowo-wapienne', label: 'Tynki cementowo-wapienne' },
       { href: '/uslugi/tynki-hybrydowe', label: 'Tynki hybrydowe' },
       { href: '/uslugi/tynki-gliniane', label: 'Tynki gliniane' },
+      { href: '/uslugi/szpachlowanie-z-malowaniem', label: 'Szpachlowanie z malowaniem' },
     ],
   },
   { href: '/realizacje', label: 'Realizacje' },

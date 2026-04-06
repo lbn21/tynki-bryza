@@ -11,7 +11,7 @@ Professional plastering company website (Polish language). Built with Next.js 16
 - **Address:** Byton 64L, wojewodztwo kujawsko-pomorskie, Poland
 - **Service area:** Wojewodztwo kujawsko-pomorskie and parts of wojewodztwo wielkopolskie
 - **Experience:** 15 lat doswiadczenia, 9 lat na rynku
-- **Services:** Tynki gipsowe, tynki gipsowe twarde, tynki cementowo-wapienne, tynki hybrydowe, tynki gliniane
+- **Services:** Tynki gipsowe, tynki gipsowe twarde, tynki cementowo-wapienne, tynki hybrydowe, tynki gliniane, szpachlowanie z malowaniem
 - **USP:** "Nie najtansi, ale jedni z najlepszych"
 - **Perks:** Wycena i dojazd gratis. Dostep do ogledzen wczesniejszych realizacji po wczesniejszym umowieniu.
 - **Target domain:** tynkibaryza.pl
@@ -62,6 +62,7 @@ Professional plastering company website (Polish language). Built with Next.js 16
 /uslugi/tynki-cementowo-wapienne  -- Tynki cementowo-wapienne
 /uslugi/tynki-hybrydowe           -- Tynki hybrydowe
 /uslugi/tynki-gliniane            -- Tynki gliniane
+/uslugi/szpachlowanie-z-malowaniem -- Szpachlowanie z malowaniem
 /realizacje                       -- Realizacje / Galeria (Gallery)
 /kontakt                          -- Kontakt (Contact)
 /polityka-prywatnosci             -- Polityka prywatnosci

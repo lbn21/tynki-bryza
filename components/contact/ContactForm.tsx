@@ -115,6 +115,7 @@ export default function ContactForm() {
           <option value="cementowo-wapienne">Tynki cementowo-wapienne</option>
           <option value="hybrydowe">Tynki hybrydowe</option>
           <option value="gliniane">Tynki gliniane</option>
+          <option value="szpachlowanie">Szpachlowanie z malowaniem</option>
           <option value="inne">Inne</option>
         </select>
         <svg className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">

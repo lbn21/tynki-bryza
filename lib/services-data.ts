@@ -4,7 +4,7 @@ export interface Service {
   shortDescription: string;
   fullDescription: string;
   benefits: string[];
-  icon: 'gipsowe' | 'cementowe' | 'hybrydowe' | 'gliniane' | 'twarde';
+  icon: 'gipsowe' | 'cementowe' | 'hybrydowe' | 'gliniane' | 'twarde' | 'szpachlowanie';
 }
 
 export const services: Service[] = [
@@ -71,6 +71,22 @@ export const services: Service[] = [
       'Przyjemna, naturalna estetyka',
     ],
     icon: 'gliniane',
+  },
+  {
+    slug: 'szpachlowanie-z-malowaniem',
+    name: 'Szpachlowanie z malowaniem',
+    shortDescription:
+      'Kompleksowe wykończenie po tynkowaniu — szpachlowanie i malowanie ścian w jednym zleceniu.',
+    fullDescription:
+      'Szpachlowanie z malowaniem to idealne uzupełnienie naszych usług tynkarskich. Po nałożeniu tynku maszynowego wykonujemy profesjonalne szpachlowanie ścian i sufitów, a następnie malowanie farbami najwyższej jakości. Dzięki temu cały proces wykończenia wnętrz realizowany jest przez jeden zespół, co gwarantuje spójność, terminowość i najwyższą jakość na każdym etapie — od surowej ściany po gotowe do zamieszkania pomieszczenie.',
+    benefits: [
+      'Kompleksowa usługa — od tynku po gotową ścianę',
+      'Idealnie gładka powierzchnia pod malowanie',
+      'Oszczędność czasu — jeden wykonawca na cały proces',
+      'Profesjonalne materiały szpachlarskie i malarskie',
+      'Gwarancja spójnej jakości wykończenia',
+    ],
+    icon: 'szpachlowanie',
   },
 ];
 
