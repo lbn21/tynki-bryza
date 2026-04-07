@@ -21,6 +21,7 @@ const navLinks = [
     ],
   },
   { href: '/realizacje', label: 'Realizacje' },
+  { href: '/nabor-pracownikow', label: 'Nabór' },
   { href: '/kontakt', label: 'Kontakt' },
 ];
 

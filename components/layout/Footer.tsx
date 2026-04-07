@@ -31,6 +31,7 @@ export default function Footer() {
                   { href: '/o-nas', label: 'O nas' },
                   { href: '/uslugi', label: 'Usługi' },
                   { href: '/realizacje', label: 'Realizacje' },
+                  { href: '/nabor-pracownikow', label: 'Nabór pracowników' },
                   { href: '/kontakt', label: 'Kontakt' },
                 ].map((link) => (
                   <li key={link.href}>

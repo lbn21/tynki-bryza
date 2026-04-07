@@ -64,6 +64,7 @@ Professional plastering company website (Polish language). Built with Next.js 16
 /uslugi/tynki-gliniane            -- Tynki gliniane
 /uslugi/szpachlowanie-z-malowaniem -- Szpachlowanie z malowaniem
 /realizacje                       -- Realizacje / Galeria (Gallery)
+/nabor-pracownikow                -- Nabor pracownikow (Recruitment)
 /kontakt                          -- Kontakt (Contact)
 /polityka-prywatnosci             -- Polityka prywatnosci
 /polityka-cookies                 -- Polityka cookies
