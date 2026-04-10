@@ -137,6 +137,8 @@ export function getContactPageSchema() {
       telephone: siteConfig.phone.raw,
       email: siteConfig.email,
       address: addressSchema,
+      image: `${BASE_URL}/og.png`,
+      priceRange: '$$',
     },
   };
 }
