@@ -21,8 +21,8 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://tynkibaryza.pl'),
   title: {
-    default: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie | Kujawsko-Pomorskie',
-    template: '%s | Tynki Maszynowe Baryza',
+    default: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie – Kujawsko-Pomorskie',
+    template: '%s – Tynki Maszynowe Baryza',
   },
   description:
     'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia. Wycena i dojazd gratis. Kujawsko-pomorskie i wielkopolskie.',
