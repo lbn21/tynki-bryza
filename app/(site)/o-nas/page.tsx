@@ -1,15 +1,37 @@
 import type { Metadata } from 'next';
 import CTABanner from '@/components/home/CTABanner';
+import JsonLd from '@/components/ui/JsonLd';
+import { getAboutPageSchema, getBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'O nas',
   description:
     'Poznaj firmę Radosław Baryza – Tynki Maszynowe. Ponad 15 lat doświadczenia w profesjonalnym tynkowaniu maszynowym w kujawsko-pomorskim i wielkopolskim.',
+  alternates: { canonical: '/o-nas' },
+  openGraph: {
+    title: 'O nas – Tynki Maszynowe Baryza',
+    description:
+      'Poznaj firmę Radosław Baryza – Tynki Maszynowe. Ponad 15 lat doświadczenia w profesjonalnym tynkowaniu maszynowym.',
+    url: '/o-nas',
+    type: 'website',
+    locale: 'pl_PL',
+    siteName: 'Tynki Maszynowe Baryza',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+  },
 };
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          getAboutPageSchema(),
+          getBreadcrumbSchema([
+            { name: 'Strona główna', url: '/' },
+            { name: 'O nas', url: '/o-nas' },
+          ]),
+        ]}
+      />
       {/* Page hero */}
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

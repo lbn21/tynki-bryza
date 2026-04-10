@@ -2,16 +2,38 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { services } from '@/lib/services-data';
 import CTABanner from '@/components/home/CTABanner';
+import JsonLd from '@/components/ui/JsonLd';
+import { getServicesItemListSchema, getBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Usługi',
+  title: 'Usługi tynkarskie',
   description:
     'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. Szpachlowanie z malowaniem. Sprawdź naszą pełną ofertę usług tynkarskich.',
+  alternates: { canonical: '/uslugi' },
+  openGraph: {
+    title: 'Usługi tynkarskie – Tynki Maszynowe Baryza',
+    description:
+      'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. Szpachlowanie z malowaniem.',
+    url: '/uslugi',
+    type: 'website',
+    locale: 'pl_PL',
+    siteName: 'Tynki Maszynowe Baryza',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+  },
 };
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          getServicesItemListSchema(services),
+          getBreadcrumbSchema([
+            { name: 'Strona główna', url: '/' },
+            { name: 'Usługi', url: '/uslugi' },
+          ]),
+        ]}
+      />
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-white mb-4">

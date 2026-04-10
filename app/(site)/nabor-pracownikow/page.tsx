@@ -1,45 +1,37 @@
 import type { Metadata } from 'next';
 import Button from '@/components/ui/Button';
 import { siteConfig } from '@/lib/site-config';
+import JsonLd from '@/components/ui/JsonLd';
+import { getJobPostingSchema, getBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Nabór pracowników',
   description:
     'Poszukujemy doświadczonych tynkarzy maszynowych. Praca na markowym sprzęcie, dojazd i samochód firmowy. Dołącz do zespołu Baryza.',
+  alternates: { canonical: '/nabor-pracownikow' },
+  openGraph: {
+    title: 'Nabór pracowników – Tynki Maszynowe Baryza',
+    description:
+      'Poszukujemy doświadczonych tynkarzy maszynowych. Praca na markowym sprzęcie, dojazd i samochód firmowy.',
+    url: '/nabor-pracownikow',
+    type: 'website',
+    locale: 'pl_PL',
+    siteName: 'Tynki Maszynowe Baryza',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+  },
 };
 
 export default function RecruitmentPage() {
-  const jobPostingSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'JobPosting',
-    title: 'Tynkarz – tynki maszynowe',
-    description:
-      'Poszukujemy doświadczonych tynkarzy do pracy przy tynkach maszynowych. Praca na markowym sprzęcie, na silomatach, na dużych i małych obiektach oraz na zabudowie jednorodzinnej i szeregowej. Dojazd i samochód firmowy po stronie pracodawcy.',
-    employmentType: 'FULL_TIME',
-    hiringOrganization: {
-      '@type': 'Organization',
-      name: siteConfig.businessName,
-      sameAs: `https://${siteConfig.website}`,
-    },
-    jobLocation: {
-      '@type': 'Place',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: siteConfig.address.street,
-        addressLocality: 'Bytoń',
-        postalCode: '88-231',
-        addressRegion: 'kujawsko-pomorskie',
-        addressCountry: 'PL',
-      },
-    },
-    datePosted: '2026-04-07',
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }}
+      <JsonLd
+        data={[
+          getJobPostingSchema(),
+          getBreadcrumbSchema([
+            { name: 'Strona główna', url: '/' },
+            { name: 'Nabór pracowników', url: '/nabor-pracownikow' },
+          ]),
+        ]}
       />
 
       {/* Page hero */}

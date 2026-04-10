@@ -1,16 +1,38 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
+import JsonLd from '@/components/ui/JsonLd';
+import { getContactPageSchema, getBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Kontakt',
   description:
     'Skontaktuj się z firmą Baryza – Tynki Maszynowe. Bezpłatna wycena i dojazd. Działamy w kujawsko-pomorskim i wielkopolskim.',
+  alternates: { canonical: '/kontakt' },
+  openGraph: {
+    title: 'Kontakt – Tynki Maszynowe Baryza',
+    description:
+      'Skontaktuj się z firmą Baryza – Tynki Maszynowe. Bezpłatna wycena i dojazd.',
+    url: '/kontakt',
+    type: 'website',
+    locale: 'pl_PL',
+    siteName: 'Tynki Maszynowe Baryza',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          getContactPageSchema(),
+          getBreadcrumbSchema([
+            { name: 'Strona główna', url: '/' },
+            { name: 'Kontakt', url: '/kontakt' },
+          ]),
+        ]}
+      />
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-white mb-4">

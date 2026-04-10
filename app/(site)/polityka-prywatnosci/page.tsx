@@ -1,13 +1,34 @@
 import type { Metadata } from 'next';
+import JsonLd from '@/components/ui/JsonLd';
+import { getWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Polityka prywatności',
-  description: 'Polityka prywatności firmy Radosław Baryza – Tynki Maszynowe.',
+  description:
+    'Polityka prywatności firmy Radosław Baryza – Tynki Maszynowe. Informacje o przetwarzaniu danych osobowych zgodnie z RODO.',
+  alternates: { canonical: '/polityka-prywatnosci' },
+  openGraph: {
+    title: 'Polityka prywatności – Tynki Maszynowe Baryza',
+    description:
+      'Polityka prywatności firmy Radosław Baryza – Tynki Maszynowe. Informacje o przetwarzaniu danych osobowych.',
+    url: '/polityka-prywatnosci',
+    type: 'website',
+    locale: 'pl_PL',
+    siteName: 'Tynki Maszynowe Baryza',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+  },
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <JsonLd
+        data={getWebPageSchema(
+          'Polityka prywatności',
+          'Polityka prywatności firmy Radosław Baryza – Tynki Maszynowe.',
+          '/polityka-prywatnosci',
+        )}
+      />
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-white">

@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { services } from '@/lib/services-data';
 import Button from '@/components/ui/Button';
 import CTABanner from '@/components/home/CTABanner';
+import JsonLd from '@/components/ui/JsonLd';
+import { getServiceSchema, getBreadcrumbSchema } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -22,6 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.name,
     description: `${service.name} – ${service.shortDescription} Profesjonalne tynki maszynowe Baryza.`,
+    alternates: { canonical: `/uslugi/${service.slug}` },
+    openGraph: {
+      title: `${service.name} – Tynki Maszynowe Baryza`,
+      description: `${service.name} – ${service.shortDescription}`,
+      url: `/uslugi/${service.slug}`,
+      type: 'website',
+      locale: 'pl_PL',
+      siteName: 'Tynki Maszynowe Baryza',
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tynki Maszynowe Baryza' }],
+    },
   };
 }
 
@@ -35,6 +47,16 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          getServiceSchema(service),
+          getBreadcrumbSchema([
+            { name: 'Strona główna', url: '/' },
+            { name: 'Usługi', url: '/uslugi' },
+            { name: service.name, url: `/uslugi/${service.slug}` },
+          ]),
+        ]}
+      />
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-white mb-4">

@@ -3,7 +3,6 @@ import { Lato, Montserrat } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { siteConfig } from '@/lib/site-config';
 
 const lato = Lato({
   subsets: ['latin', 'latin-ext'],
@@ -20,6 +19,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tynkibaryza.pl'),
   title: {
     default: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie | Kujawsko-Pomorskie',
     template: '%s | Tynki Maszynowe Baryza',
@@ -41,6 +41,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pl_PL',
     siteName: 'Tynki Maszynowe Baryza',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tynki Maszynowe Baryza – Profesjonalne Tynkowanie',
+    description:
+      'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia.',
+    images: ['/og.png'],
   },
 };
 
@@ -51,39 +66,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" data-scroll-behavior="smooth" className={`${lato.variable} ${montserrat.variable}`}>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: 'Firma Radosław Baryza – Tynki Maszynowe',
-              description:
-                'Profesjonalne tynki maszynowe – gipsowe, cementowo-wapienne, hybrydowe i gliniane. 15 lat doświadczenia.',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: siteConfig.address.street,
-                addressLocality: 'Bytoń',
-                postalCode: siteConfig.address.postalCode,
-                addressRegion: 'kujawsko-pomorskie',
-                addressCountry: 'PL',
-              },
-              telephone: siteConfig.phone.raw,
-              email: siteConfig.email,
-              areaServed: ['kujawsko-pomorskie', 'wielkopolskie'],
-              priceRange: '$$',
-              // {PLACEHOLDER} - uzupełnić godziny otwarcia
-              openingHoursSpecification: {
-                '@type': 'OpeningHoursSpecification',
-                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                opens: '07:00',
-                closes: '17:00',
-              },
-            }),
-          }}
-        />
-      </head>
       <body className="min-h-screen flex flex-col antialiased">
         {children}
         <Analytics />
