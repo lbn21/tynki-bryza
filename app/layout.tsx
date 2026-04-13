@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Lato, Montserrat } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const lato = Lato({
   subsets: ['latin', 'latin-ext'],
@@ -69,7 +68,6 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased">
         {children}
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
